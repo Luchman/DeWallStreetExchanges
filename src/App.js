@@ -1,4 +1,4 @@
-import Splash from "./pages/Splash"; 
+// import Splash from "./pages/Splash"; 
 import Home from "./pages/Home";
 import Tab from "./pages/Tab";
 import Footer from "./pages/Footer";
@@ -10,7 +10,7 @@ function App() {
       <Home/>
       <Tab/>
       <Footer/>
-      
+      {/* <Splash/> */}
      </div>
   );
 }

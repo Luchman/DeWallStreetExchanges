@@ -1,4 +1,6 @@
 import React from 'react'
+import  '../styles/tab.modules.css'
+
 
 function Tab() {
     return (

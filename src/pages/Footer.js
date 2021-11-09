@@ -1,13 +1,13 @@
 import React from "react";
 import logo from "../assets/coin.png";
 import logo1 from "../assets/logo1.png";
-import styles from "../styles/footer.modules.css"
+import "../styles/footer.modules.css"
 
 function Footer() {
   return (
     <div className="background1">
-      <img className="icon" src={logo} />
-      <img className="logo" src={logo1} />
+      <img className="icon" src={logo}  alt="logo"/>
+      <img className="logo" src={logo1} alt="logo2"/>
       <div className="para">
         <p style={{ color: "white" }}>
           The first universal securities and deriviatives exchanges for

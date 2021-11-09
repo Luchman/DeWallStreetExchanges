@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/home.modules.css";
+import  "../styles/home.modules.css";
 import icon from "../assets/logo2.png";
 import coin from "../assets/coin.png";
 
