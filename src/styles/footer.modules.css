@@ -1,0 +1,25 @@
+.background1 {
+  width: inherit;
+  height: 249px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 139px;
+  height: 128px;
+}
+
+.logo {
+  width: 310px;
+  height: 153.22px;
+  margin: 0px 72px;
+}
+
+.para {
+  line-height: 19px;
+  width: 467px;
+  height: 57px;
+}

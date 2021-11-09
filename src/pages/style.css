@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+.splash {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  width: 310px;
+  height: 153.22px;
+}
+
+
+.tab {
+  width: inherit;
+  height: 44px;
+  background-color: #151515;
+}
+
