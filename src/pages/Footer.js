@@ -6,15 +6,15 @@ import "../styles/footer.modules.css"
 function Footer() {
   return (
     <div className="background1">
-      <img className="icon" src={logo}  alt="logo"/>
-      <img className="logo" src={logo1} alt="logo2"/>
+      <img className="footericon" src={logo}  alt="logo"/>
+      <img className="footerlogo" src={logo1} alt="logo2"/>
       <div className="para">
         <p style={{ color: "white" }}>
           The first universal securities and deriviatives exchanges for
           decentralized crypto communities for cross border transactions and
           distributed intercontinental wealth portfolios.
         </p>
-        <div style={{ color: "#599dff",cursor:"pointer" }}>get started. {">"}</div>
+        <div className="mini-button">get started. {">"}</div>
       </div>
     </div>
   );

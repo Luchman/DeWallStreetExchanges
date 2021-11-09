@@ -7,19 +7,33 @@
   justify-content: center;
 }
 
-.icon {
+.footericon {
+  left: 190px;
   width: 139px;
   height: 128px;
 }
 
-.logo {
+.footerlogo {
   width: 310px;
   height: 153.22px;
   margin: 0px 72px;
+  left: 401px;
 }
 
 .para {
+  font-family: Gilroy-Medium;
   line-height: 19px;
   width: 467px;
   height: 57px;
+}
+
+.mini-button {
+  background: conic-gradient(
+    from 117.36deg at 40% 58.57%,
+    #00ffff 0deg,
+    #698aff 360deg
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
 }

@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../src/fonts/Gilroy-Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../src/fonts/Gilroy-Medium.ttf') format('truetype')
+}
 body {
   
   margin: 0;
@@ -9,10 +18,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
     
 }
