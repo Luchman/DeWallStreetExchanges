@@ -4,16 +4,20 @@ import icon from "../assets/logo.png";
 import coin from "../assets/coin.png";
 
 function Home() {
+
+  function clickHandler(){
+    console.log("clicked")
+  }
   return (
     <div>
       <div className="background">
         <img className="icon" src={icon} alt="icon" />
         <div className="frame">
-          <text className="text1">MANIFESTING THE FIRST</text>
-          <text className="text4">F O R C R Y P T O C O M M U N I T I E S</text>
+          <text className="text1">MANIFESTING THE FIRST </text>
+          <text className="text4">FOR&nbsp;CRYPTO&nbsp;COMMUNITIES</text>
           <text className="text3">conglomerate</text>
-          <text className="text2">UNIVERSAL</text>
 
+          <text className="text2"></text>
         </div>
         <div className="frame2">
           <img className="coin" src={coin} alt="coin" />
@@ -26,8 +30,10 @@ function Home() {
               ventures as dividends .
             </text>
           </div>
-          <button className="buttonclass">
-            <text style={{lineHeight:"21px"}}><strong>Stake</strong> now.</text>
+          <button className="buttonclass" onClick={clickHandler}>
+            
+              <b>stake</b>&nbsp;now.
+          
           </button>
         </div>
       </div>

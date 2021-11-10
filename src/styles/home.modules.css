@@ -27,8 +27,6 @@
 
 .text1 {
   position: absolute;
-  width: 494px;
-  height: 75px;
   color: #ffffff;
   font-family: Staatliches;
   font-size: 59.7333px;
@@ -40,7 +38,14 @@
   position: absolute;
   width: 517px;
   height: 174px;
-  background: conic-gradient(
+  top: 105.08px;
+  left: 344.44px;
+
+  background-image: url(../assets/universal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* background: conic-gradient(
     from 117.36deg at 40% 58.57%,
     #00ffff 0deg,
     #698aff 360deg
@@ -50,17 +55,15 @@
   font-family: Staatliches;
   line-height: 174px;
   font-size: 139.378px;
-  top: 93.08px;
   text-shadow: 0px 8.73738px 8.73738px rgba(0, 0, 0, 0.25);
   display: flex;
-  align-items: center;
+  align-items: center; */
 }
 
 .text3 {
   font-family: "Gilroy-Bold";
   position: absolute;
-  width: 527.64px;
-  height: 107.02px;
+
   font-size: 86.9597px;
   line-height: 102px;
   letter-spacing: -0.04em;
@@ -74,12 +77,12 @@
 
 .text4 {
   position: absolute;
-  width: 525.16px;
-  height: 57.24px;
+  top: 93.08px;
   font-family: Staatliches;
   font-size: 44.8px;
+  letter-spacing: 6.1px;
   color: #ffffff;
-  top: 287.68px;
+  top: 300px;
   text-shadow: 0px 2.94141px 2.94141px rgba(0, 0, 0, 0.25);
 }
 
@@ -118,11 +121,12 @@
   width: 150px;
   height: 34px;
   border: 0;
-  color: #599dff;
+  color: rgba(89, 157, 255, 0.8);
   background-color: white;
-  font-family: "Gilroy-Medium";
+  font-family: Gilroy-Regular;
   font-size: 18px;
   line-height: 21px;
+  cursor: pointer;
 }
 
 .group {
