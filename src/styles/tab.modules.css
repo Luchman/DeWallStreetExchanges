@@ -1,5 +1,65 @@
 .tab {
-    width: inherit;
-    height: 5vh;
-    background-color: #151515;
-  }
+  width: inherit;
+  height: 5vh;
+  background-color: #151515;
+  display: flex;
+}
+
+.dropdown {
+  font-family: Gilroy-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  background: rgba(21, 21, 21, 1);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30vw;
+  margin-top: 5px;
+}
+
+.dropdownDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.option {
+  display: none;
+}
+
+.optionclicked {
+  display: flex;
+  position: relative;
+  background-color: rgb(31, 29, 29);
+  color: white;
+  width: 100px;
+  justify-content: center;
+  cursor: pointer;
+}
+.optionclicked:hover {
+  background-color: rgb(58, 56, 56);
+}
+
+.links {
+  display: flex;
+  font-family: Gilroy-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  width: 70vw;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.holder {
+  display: flex;
+  flex-direction: column;
+}
