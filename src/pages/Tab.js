@@ -33,8 +33,12 @@ function Tab() {
           <div className={state.name} onClick={clickHandler}>
             India
           </div>
-          <div className={state.name} onClick={clickHandler}>Somalia</div>
-          <div className={state.name} onClick={clickHandler}>Iraq</div>
+          <div className={state.name} onClick={clickHandler}>
+            Somalia
+          </div>
+          <div className={state.name} onClick={clickHandler}>
+            Iraq
+          </div>
         </div>
       </div>
       <div className="links">{renderData}</div>

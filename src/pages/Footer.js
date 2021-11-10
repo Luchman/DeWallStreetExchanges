@@ -6,8 +6,8 @@ import arrow from "../assets/Vector.png";
 import "../styles/footer.modules.css";
 
 function Footer() {
-  function clickHandler(){
-    console.log("clicked")
+  function clickHandler() {
+    console.log("clicked");
   }
   return (
     <div className="background1">

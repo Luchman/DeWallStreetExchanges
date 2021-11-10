@@ -4,9 +4,8 @@ import icon from "../assets/logo.png";
 import coin from "../assets/coin.png";
 
 function Home() {
-
-  function clickHandler(){
-    console.log("clicked")
+  function clickHandler() {
+    console.log("clicked");
   }
   return (
     <div>
@@ -31,9 +30,7 @@ function Home() {
             </text>
           </div>
           <button className="buttonclass" onClick={clickHandler}>
-            
-              <b>stake</b>&nbsp;now.
-          
+            <b>stake</b>&nbsp;now.
           </button>
         </div>
       </div>
