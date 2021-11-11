@@ -1,0 +1,391 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Menu_contents{
+  display: flex;
+  margin-right: 0%;
+  padding-left: 50px;
+  text-decoration: unset;
+  color: rgb(250, 252, 252);
+  margin-top: 5.5px;
+  font-family: Gilroy-Medium;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 200;
+}
+
+.display_contents{
+  position: absolute;
+width: 714px;
+height: 208px;
+left: 290px;
+top: 194px;
+
+}
+
+
+.Menu_bg{
+  display: flex;
+margin-right: 100%;
+flex-direction: row;
+position: absolute;
+width: 100%;
+height: 44px;
+left: 0px;
+top: 0px;
+
+background: #151515;
+}
+
+
+.main_content{
+  display: flex;
+  margin-left: 34px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.left_panel{
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  margin-left: 34px;
+  margin-top: 156px;
+}
+
+.center_panel{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 600px;
+  height: 208px;
+  left: 290px;
+  top: 194px;
+  background: conic-gradient(from 120.33deg at 69.19% 59.62%, #00FFFF 0deg, #698AFF 360deg);
+  border-radius: 10px;
+}
+
+.right_panel{
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box{
+
+  display: flex;
+  position: absolute;
+  width: 220px;
+  height: 35px;
+  left: 34px;
+  top: 160px;
+  
+  border: 2px solid #F3F6FF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.industries{
+  display: flex;
+  position: absolute;
+  width: 220px;
+  height: 35px;
+  left: 34px;
+  top: 220px;
+}
+.Markets{
+  display: flex;
+  position: absolute;
+  width: 220px;
+  height: 35px;
+  left: 34px;
+  top: 260px;
+}
+
+.introducing{
+  position: absolute;
+width: 100px;
+height: 109px;
+left: 65px;
+top: 35px;
+font-style: normal;
+font-weight: normal;
+font-size: 50.0521px;
+line-height: 109px; 
+ font-family: Staatliches;
+display: flex;
+align-items: center;
+
+/* white */
+
+ color: #FFFFFF;
+
+text-shadow: 0px 5.45716px 5.45716px rgba(0, 0, 0, 0.25); 
+}
+
+.newproduct{
+position: absolute;
+width: 280px;
+height: 35px;
+left: 80px;
+top: 130px;
+
+font-family: Staatliches;
+font-style: normal;
+font-weight: normal;
+font-size: 20.981px;
+line-height: 35px; 
+
+
+/* white */
+
+color: #FFFFFF;
+
+text-shadow: 0px 1.83714px 1.83714px rgba(0, 0, 0, 0.25);
+}
+
+.Defluencer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 32px;
+
+position: absolute;
+width: 200px;
+height: 110px;
+left: 710px;
+top: 210px;
+color: #FFFFFF;
+
+background: #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+.product_exchange{
+  background: conic-gradient(from 113.68deg at 62.77% 100%, #00FFFF 0deg, #698AFF 360deg);
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 200px;
+height: 55px; 
+border-color: conic-gradient(from 113.68deg at 62.77% 100%, #00FFFF 0deg, #698AFF 360deg);
+
+}
+
+.Trending_gainers{
+  
+position: absolute;
+width: 125px;
+height: 20px;
+left: 1030px;
+top: 198px;
+
+font-family: Gilroy-Bold;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+
+color: #202A59;
+
+}
+
+.Today{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 68px;
+height: 24px;
+left: 1200px;
+top: 196px;
+}
+
+.exchange{
+/* position: absolute;*/
+
+/* left: 290px;
+top: 87px; */
+width: 200px;
+height: 55px; 
+border: 2px solid #F3F6FF;
+box-sizing: border-box;
+border-radius: 10px;
+background-color: rgba(255, 255, 255, 0.87);
+
+}
+
+::placeholder{
+  position: absolute;
+width: 102.33px;
+height: 20px; 
+/* left: 56px; */
+/* top: 173px; */
+
+font-family: Gilroy-Bold;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+
+color: #001343;
+
+/* background-image: url("https://i.ibb.co/L9yfS0d/search.png");
+background-repeat: no-repeat;
+background-position: 90px; */
+}
+
+.input_field{
+  width: 160px;
+  padding-right: 0%;
+  border: 2px solid #F3F6FF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.DeEXe{
+  display: flex;
+}
+
+.DeCXE{
+  display: flex;
+  flex-direction: column;
+}
+
+.Togrect{
+display: flex;
+width: 38px;
+height: 5px;
+left: 155px;
+top: 90px;
+margin-top: 7px;
+
+/* background: #DAE2FF; */
+/* border-radius: 100px; */
+}
+
+.Togellipse{
+  display: flex;
+width: 18px;
+height: 18px;
+left: 130px;
+top: 75px;
+margin-top: -10px;
+margin-left: -3px;
+
+/* prime_angular */
+
+/* background: conic-gradient(from 117.36deg at 40% 58.57%, #00FFFF 0deg, #698AFF 360deg);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.securities{
+  position: absolute;
+width: 60px;
+height: 17px;
+left: 34px;
+top: 99px;
+
+font-family: Gilroy-Regular;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #202A59;
+}
+
+.menu_buttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 83px;
+}
+
+.Logonav{
+  display: flex;
+  margin-left: 7px;
+}
+
+.exchangestxt{
+  font-family: Gilroy-Bold;
+  font-size: 12.4692px;
+  color: #FFFFFF;
+  text-shadow: 0px 2.63845px 2.63845px rgba(0, 0, 0, 0.25);
+  margin-top: -9px;
+  margin-left: 9px;
+}
+
+.dewallstreettxt{
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.Navmap{
+  display: flex;
+  margin-top: 8px ;
+  justify-content: space-evenly;
+  margin-left: 100px;
+}
+
+
+.universaltxt{
+  font-family: Gilroy-Bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 8px;
+  color: #FFFFFF;
+}
+.navdown{
+margin-left: 8px;
+}
+
+.exchangetxt{
+margin-top: 5px;
+font-family: Gilroy-Regular;
+font-size: 16px;
+line-height: 14px;
+
+}
+
+.prdexetext{
+  margin-top: 5px;
+text-decoration: none;
+color: #FFFFFF;
+font-family: Gilroy-Regular;
+font-size: 16px;
+line-height: 14px;
+}
+

@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Dashboards.",
+      "to":"/Dashboards"
+    },
+    
+    {
+      "title": "Exchanges.",
+      "to":"/Exchanges"
+    },
+    {
+      "title": "Portfolios.",
+      "to":"/Portfolios"
+  
+    },
+    
+    {
+      "title": "Relations.",
+      "to":"/Relations"
+  
+    },
+    {
+        "title": "Resources.",
+        "to":"/Resources"
+    
+    },
+      {
+        "title": "Accounts.",
+        "to":"/Accounts"
+    
+      }
+  ]
