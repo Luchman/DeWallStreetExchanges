@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/tab.modules.css";
-import Datas from "../data/data.json"
+import Datas from "../data/data.json";
 import arrow from "../assets/arrow.png";
 import mappin from "../assets/map-pin.png";
 
