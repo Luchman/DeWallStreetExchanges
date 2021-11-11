@@ -10,11 +10,11 @@ function Home() {
       <div className="background">
         <img className="icon" src={icon} alt="icon" />
         <div className="frame">
-          <text className="text1">MANIFESTING THE FIRST</text>
-          <text className="text4">F O R C R Y P T O C O M M U N I T I E S</text>
+          <text className="text1">MANIFESTING THE FIRST </text>
+          <text className="text4">FOR&nbsp;CRYPTO&nbsp;COMMUNITIES</text>
           <text className="text3">conglomerate</text>
-          <text className="text2">UNIVERSAL</text>
 
+          <text className="text2"></text>
         </div>
         <div className="frame2">
           <img className="coin" src={coin} alt="coin" />
@@ -28,6 +28,7 @@ function Home() {
             </text>
           </div>
           <button className="buttonclass"> <Link to='/Navigation' style={{textDecoration:"none"}}><text style={{lineHeight:"21px"}}><strong>Stake</strong> now.</text></Link>
+
           </button>
         </div>
       </div>

@@ -1,4 +1,3 @@
-// import Splash from "./pages/Splash"; 
 import Home from "./pages/Home";
 import Tab from "./pages/Tab";
 import Footer from "./pages/Footer";
@@ -8,9 +7,7 @@ import '../src/App.css'
 import { Dashboards, Exchanges, Portfolios, Relations, Resources, Accounts } from "./pages";
 import Productexchanges from "./pages/exchanges/Productexchanges";
 
-
 function App() {
-
 
   return (
     <div >
@@ -61,3 +58,5 @@ function App() {
 }
 
 export default App;
+
+
