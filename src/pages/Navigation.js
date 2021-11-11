@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import NavData from '../Data/NavData.json'
+import NavData from '../data/NavData.json'
 import Coin from '../assets/Imagejs/Coin';
 import Dewallstreet from '../assets/Imagejs/Dewallstreet';
 import Map from '../assets/Imagejs/Map';

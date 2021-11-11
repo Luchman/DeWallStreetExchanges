@@ -2,9 +2,10 @@ import React from "react";
 import "../styles/home.modules.css";
 import icon from "../assets/logo.png";
 import coin from "../assets/coin.png";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Home() {
+  const history = useHistory();
   return (
     <div>
       <div className="background">
@@ -27,8 +28,13 @@ function Home() {
               ventures as dividends .
             </text>
           </div>
-          <button className="buttonclass"> <Link to='/Navigation' style={{textDecoration:"none"}}><text style={{lineHeight:"21px"}}><strong>Stake</strong> now.</text></Link>
-
+          <button
+            className="buttonclass"
+            onClick={() => {
+              history.push("/Navigation");
+            }}
+          >
+            <b>stake</b>&nbsp;now.
           </button>
         </div>
       </div>
