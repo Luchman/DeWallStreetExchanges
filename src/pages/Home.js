@@ -2,40 +2,69 @@ import React from "react";
 import "../styles/home.modules.css";
 import icon from "../assets/logo.png";
 import coin from "../assets/coin.png";
-import universal from '../assets/universal.png'
+import universal from "../assets/universal.png";
 import { useHistory } from "react-router-dom";
+import Text from "../components/Text";
+import Button from "../components/Button";
+import Img from "../components/Img"
 
 function Home() {
   const history = useHistory();
   return (
     <div>
       <div className="background">
-        <img className="icon" src={icon} alt="icon" />
+        <Img variant="depeople" src={icon} alt="icon" />
         <div className="frame">
-          <text className="text1">MANIFESTING THE FIRST </text>
-          <img className="text2" src={universal} alt="universal text"/>
-          <text className="text3">conglomerate</text>
-          <text className="text4">FOR&nbsp;CRYPTO&nbsp;COMMUNITIES</text>
+          <Text component="text" variant="primary">
+            MANIFESTING&nbsp;&nbsp;THE&nbsp;&nbsp;FIRST
+          </Text>
+          <img src={universal} alt="universal text" />
+          <Text
+            component="text"
+            variant="secondary"
+            style={{
+              marginTop: "-50px",
+            }}
+          >
+            conglomerate
+          </Text>
+          <Text
+            component="text"
+            variant="primary"
+            letterSpacing="6.1px"
+            textShadow="0px 2.94141px 2.94141px rgba(0, 0, 0, 0.25)"
+            fontSize="44.8px"
+            style={{
+              marginTop: "-10px",
+            }}
+          >
+            FOR&nbsp;CRYPTO&nbsp;COMMUNITIES
+          </Text>
         </div>
         <div className="frame2">
-          <img className="coin" src={coin} alt="coin" />
+          <Img variant="coin" src={coin} alt="coin" />
           <div className="group">
-            <text className="label">
+            <Text
+              variant="default"
+              textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+              fontSize="32px"
+              style={{ margin: "2vh 0" }}
+            >
               stake <b>dé</b>
-            </text>
-            <text className="label2">
+            </Text>
+            <Text variant="default" lineHeight="19px">
               and earn promising returns from our products, services and
               ventures as dividends .
-            </text>
+            </Text>
           </div>
-          <button
+          <Button
             className="buttonclass"
             onClick={() => {
               history.push("/Navigation");
             }}
           >
             <b>stake</b>&nbsp;now.
-          </button>
+          </Button>
         </div>
       </div>
     </div>

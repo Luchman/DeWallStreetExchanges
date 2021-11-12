@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../assets/coin.png";
 import logo1 from "../assets/logo1.png";
 import arrow from "../assets/Vector.png";
+import Text from "../components/Text";
+import Img from "../components/Img"
 
 import "../styles/footer.modules.css";
 
@@ -11,17 +13,17 @@ function Footer() {
   }
   return (
     <div className="background1">
-      <img className="footericon" src={logo} alt="logo" />
-      <img className="footerlogo" src={logo1} alt="logo2" />
+      <Img variant="coin" src={logo} alt="logo" />
+      <Img variant="dewallstreet" src={logo1} alt="logo2" />
       <div className="para">
-        <p style={{ color: "white" }}>
+        <Text varient="default">
           The first universal securities and deriviatives exchanges for
           decentralized crypto communities for cross border transactions and
           distributed intercontinental wealth portfolios.
-        </p>
+        </Text>
         <text className="mini-button" onClick={clickHandler}>
           get <b>started</b>.
-          <img className="mini-arrow" src={arrow} alt="proceed" />
+          <Img variant="miniarrow" src={arrow} alt="proceed" />
         </text>
       </div>
     </div>

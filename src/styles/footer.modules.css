@@ -7,24 +7,10 @@
   justify-content: center;
 }
 
-.footericon {
-  left: 190px;
-  width: 139px;
-  height: 128px;
-}
 
-.footerlogo {
-  width: 310px;
-  height: 153.22px;
-  margin: 0px 72px;
-  left: 401px;
-}
 
 .para {
-  font-family: Gilroy-Medium;
-  line-height: 19px;
   width: 467px;
-  font-size: 16px;
 }
 
 .mini-button {
@@ -41,8 +27,4 @@
   line-height: 21px;
 }
 
-.mini-arrow {
-  width: 6px;
-  height: 12px;
-  margin-left: 15px;
-}
+

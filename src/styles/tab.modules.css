@@ -6,11 +6,7 @@
 }
 
 .dropdown {
-  font-family: Gilroy-Medium;
-  font-size: 16px;
-  line-height: 19px;
   display: flex;
-  background: rgba(21, 21, 21, 1);
   color: white;
   justify-content: center;
   align-items: center;
@@ -45,9 +41,6 @@
 
 .links {
   display: flex;
-  font-family: Gilroy-Medium;
-  font-size: 16px;
-  line-height: 19px;
   width: 75vw;
   color: white;
   justify-content: space-evenly;
