@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/home.modules.css";
 import icon from "../assets/logo.png";
 import coin from "../assets/coin.png";
+import universal from '../assets/universal.png'
 import { useHistory } from "react-router-dom";
 
 function Home() {
@@ -12,10 +13,9 @@ function Home() {
         <img className="icon" src={icon} alt="icon" />
         <div className="frame">
           <text className="text1">MANIFESTING THE FIRST </text>
-          <text className="text4">FOR&nbsp;CRYPTO&nbsp;COMMUNITIES</text>
+          <img className="text2" src={universal} alt="universal text"/>
           <text className="text3">conglomerate</text>
-
-          <text className="text2"></text>
+          <text className="text4">FOR&nbsp;CRYPTO&nbsp;COMMUNITIES</text>
         </div>
         <div className="frame2">
           <img className="coin" src={coin} alt="coin" />
