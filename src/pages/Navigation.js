@@ -6,8 +6,11 @@ import Dewallstreet from '../assets/Imagejs/Dewallstreet';
 import Map from '../assets/Imagejs/Map';
 import Navdown from '../assets/Imagejs/Navdown';
 import {useState} from 'react';
+import {useHistory} from "react-router";
 
 function Navigation() {
+
+  const history = useHistory();
 
   const [state, setState] = useState({ clicked: false, name: "option" });
   function clickHandler() {
@@ -16,12 +19,12 @@ function Navigation() {
       name: state.clicked ? "option" : "optionclicked",
     });
   }
-
+ 
     const renderData = NavData.map((Data) => (
-        <b>
-          <Link to={Data.to} className="Menu_contents">
+        <b className="Menu_contents" onClick={()=>{history.push(Data.to)}}>
+         
             {Data.title}
-          </Link>
+          
         </b>
       ));
 
@@ -29,9 +32,9 @@ function Navigation() {
     <div className='Menu_bg'>
         <div className="Logonav" >
               
-              <Link to ="/" ><Coin/></Link>
+              <div onClick={()=>{history.push("/")}} ><Coin/></div>
               <div>
-                <div className="dewallstreettxt"><Link to ="/Navigation" ><Dewallstreet/></Link></div>
+                <div className="dewallstreettxt" onClick={()=>{history.push("/Navigation")}} ><Dewallstreet/></div>
                 <div className="exchangestxt">exchanges.</div>
               </div>
         </div>
