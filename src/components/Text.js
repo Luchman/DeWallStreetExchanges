@@ -2,6 +2,7 @@ import React from "react";
 
 const Text = (props) => {
   const {
+    className,
     component,
     children,
     variant,
@@ -12,6 +13,7 @@ const Text = (props) => {
     textShadow,
     fontFamily,
     letterSpacing,
+    cursor
   } = props;
 
   const primaryStyles = {
@@ -29,6 +31,8 @@ const Text = (props) => {
     letterSpacing: letterSpacing || "-0.04em",
     color: "#ffffff",
     textShadow: textShadow || "0px 7.50275px 7.50275px rgba(0, 0, 0, 0.25)",
+    cursor:cursor,
+    className:className,
     ...style,
   };
 

@@ -12,31 +12,44 @@
   align-items: center;
   cursor: pointer;
   width: 25vw;
+  height: -webkit-fill-available;
+  padding: 1vh 1vw;
+  font-family: Gilroy-Bold;
+  font-size: 16px;
   margin-top: 5px;
 }
 
 .dropdownDown {
+  margin-bottom: 13px;
+  position: sticky;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-
+  align-items: center;
 }
 
 .option {
   display: none;
 }
 
+.optionclickholder {
+  height: inherit;
+  width: inherit;
+  background: rgba(19, 19, 19, 1);
+}
+
 .optionclicked {
   display: flex;
   position: relative;
-  background-color: rgb(31, 29, 29);
+  background: rgba(19, 19, 19, 1);
   color: white;
-  width: 100px;
-  justify-content: center;
+  width: 110px;
+  justify-content: flex-start;
   cursor: pointer;
+  padding: 5px;
+  font-family: Gilroy-Medium;
 }
 .optionclicked:hover {
-  background-color: rgb(58, 56, 56);
+  background-color: rgba(44, 44, 44, 1);
 }
 
 .links {
@@ -49,9 +62,21 @@
 
 .link {
   cursor: pointer;
+  font-family: Gilroy-Medium;
+  font-size: 16px;
 }
 
+.link:hover {
+  background: conic-gradient(
+    from 117.36deg at 40% 58.57%,
+    #00ffff 0deg,
+    #698aff 360deg
+  );
+  background-clip: text;
+  color: transparent;
+}
 .holder {
   display: flex;
   flex-direction: column;
+  
 }

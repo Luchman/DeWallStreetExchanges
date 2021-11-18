@@ -16,7 +16,7 @@ import Productexchanges from "./pages/exchanges/Productexchanges";
 
 function App() {
   return (
-    <div>
+    
       <Switch>
         <Route path="/" exact>
           <Home />
@@ -57,7 +57,7 @@ function App() {
           <Productexchanges />
         </Route>
       </Switch>
-    </div>
+    
   );
 }
 

@@ -7,14 +7,18 @@ const Button = (props) => {
     fontSize,
     style,
     onClick,
+    height,
+    width,
+    color,
+    fontFamily
    
   } = props;
 
 
   const defaultStyles = {
-    fontFamily: "Gilroy-Regular",
+    fontFamily: fontFamily || "Gilroy-Regular",
     fontSize: fontSize || "18px",
-    color:"rgba(89, 157, 255, 0.8)",
+    color: color ||"rgba(89, 157, 255, 0.8)",
     backgroundColor: "#ffffff",
     cursor:"pointer",
     border:"0px",
@@ -22,6 +26,9 @@ const Button = (props) => {
     height:"34px",
     ...style,
   };
+
+ 
+
 
   const styles = () => {
     

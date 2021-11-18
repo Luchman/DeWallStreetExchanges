@@ -2,17 +2,22 @@
 
 @font-face {
   font-family: "Gilroy-Bold";
-  src: url("../src/fonts/Gilroy-Bold.ttf") format("truetype");
+  src: url("../src/assets/fonts/Gilroy-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gilroy-Medium";
-  src: url("../src/fonts/Gilroy-Medium.ttf") format("truetype");
+  src: url("../src/assets/fonts/Gilroy-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gilroy-Regular";
-  src: url("../src/fonts/Gilroy-Regular.ttf") format("truetype");
+  src: url("../src/assets/fonts/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../src/assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
 }
 
 body {
