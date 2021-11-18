@@ -26,7 +26,7 @@ const history = useHistory();
         </div>
         <div><span>deriviatives</span></div>
        <div> <button className="exchange" onClick={()=>{history.push("/")}}><div style={{justifyContent:"space-evenly",display:"flex"}}><Settings/><b style={{fontFamily:"Gilroy-Bold"}}>service</b>exchange.</div> </button></div>
-       <div> <button className="exchange" onClick={()=>{history.push("/Productexchanges")}}><div style={{justifyContent:"space-evenly",display:"flex"}}><Inbox/><b style={{fontFamily:"Gilroy-Bold"}}>product</b>exchange.</div> </button></div>
+       <div> <button className="exchange" onClick={()=>{history.push("/Exchanges/Productexchange")}}><div style={{justifyContent:"space-evenly",display:"flex"}}><Inbox/><b style={{fontFamily:"Gilroy-Bold"}}>product</b>exchange.</div> </button></div>
        <div> <button className="exchange" onClick={()=>{history.push("/")}}><div style={{justifyContent:"space-evenly",display:"flex"}}><Anchor/> <b style={{fontFamily:"Gilroy-Bold"}}>venture</b>exchange.</div></button></div>
        <div> <button className="exchange" onClick={()=>{history.push("/")}}><div style={{justifyContent:"space-evenly",display:"flex"}}><Anchor/> <b style={{fontFamily:"Gilroy-Bold"}}>asset</b>exchange.</div></button></div>
        <div> <button className="exchange" onClick={()=>{history.push("/")}}><div style={{justifyContent:"space-evenly",display:"flex"}}><Anchor/> <b style={{fontFamily:"Gilroy-Bold"}}>venture</b>exchange.</div></button></div>
