@@ -1,0 +1,12 @@
+.parent {
+  background-color: #f5f5fa;
+  height: -webkit-fill-available;
+  width: 100%;
+  display: flex;
+  margin-top: 7vh;
+  padding-top: 8vh;
+}
+
+
+
+

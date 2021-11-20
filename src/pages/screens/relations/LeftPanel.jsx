@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+import  "../../../styles/screens/relations/leftpanel.modules.css"
+
+
 import Button from "../../../components/Button";
 
 import {

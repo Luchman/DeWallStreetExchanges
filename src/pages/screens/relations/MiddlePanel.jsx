@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "../../../styles/relations.modules.css";
+import  "../../../styles/screens/relations/centralpanel.modules.css"
 
 import datas from "../../../data/threads.json";
 
@@ -54,7 +54,10 @@ function MiddlePanel() {
         {/*POP-UP TOOLS*/}
 
         <div className="share-box">
-          <div className={stuffDisplay ? "stuff-box" : "stuff-box-none"}>
+          <div
+            className={stuffDisplay ? "stuff-box" : "stuff-box-none"}
+            onClick={() => setStuffDisplay(!stuffDisplay)}
+          >
             <div className="mini-stuff">
               <img src={edit} alt="edit" /> &nbsp;
               <text style={{ fontFamily: "Gilroy-Bold" }}>edit</text>post
@@ -85,8 +88,7 @@ function MiddlePanel() {
         <label className="topic">{data.topic}</label>
         <label className="content">{data.content}</label>
 
-        <div className="info">
-          
+        <div className={isDisplay? "info-comment" : "info"}>
           {/*AUTHOR-SECTION*/}
 
           <div className="seperator">
@@ -112,10 +114,13 @@ function MiddlePanel() {
               <img src={plus} alt="plus" />
               <text className="btn-text">add your response</text>
             </button>
-            <button className="blueButton" onClick={()=>{
-              setBookmark(!bookmark)
-            }}>
-              <img src={bookmark ? bookmarked:save} alt="save" />
+            <button
+              className="blueButton"
+              onClick={() => {
+                setBookmark(!bookmark);
+              }}
+            >
+              <img src={bookmark ? bookmarked : save} alt="save" />
             </button>
           </div>
         </div>

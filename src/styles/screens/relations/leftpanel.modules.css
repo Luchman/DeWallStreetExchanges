@@ -1,0 +1,76 @@
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    margin-left: 2vw;
+  }
+  
+  .thread-widget {
+    width: initial;
+    height: 25vh;
+    background: white;
+    border: 2px solid #f3f6ff;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 20px rgba(121, 173, 211, 0.08);
+    border-radius: 10px;
+    padding: 2vh 1.2vw;
+    margin-bottom: 3vh;
+  }
+  
+  .home {
+    width: initial;
+    height: 40px;
+    background: conic-gradient(
+      from 113.68deg at 62.77% 100%,
+      #00ffff 0deg,
+      #698aff 360deg
+    );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card {
+    width: initial;
+    height: 35px;
+    margin: 5px 0px 5px 0px;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    background-color: white;
+    color: #001343;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+  
+  .card-hover {
+    width: initial;
+    height: 35px;
+    margin: 5px 0px 5px 0px;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: conic-gradient(
+      from 113.68deg at 62.77% 100%,
+      #00ffff 0deg,
+      #698aff 360deg
+    );
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    background: conic-gradient(
+      from 113.68deg at 62.77% 100%,
+      #00ffff 0deg,
+      #698aff 360deg
+    );
+    color: white;
+  }
+  

@@ -1,6 +1,4 @@
-import Home from "./pages/Home";
-import Tab from "./pages/Tab";
-import Footer from "./pages/Footer";
+import {Home,Footer,Tab} from "../src/pages/screens/home/index"
 import { Route, Switch } from "react-router";
 import Navigation from "./pages/Navigation.jsx";
 

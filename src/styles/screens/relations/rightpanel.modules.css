@@ -1,0 +1,185 @@
+.btn-text {
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  color: #001343;
+}
+
+.top-investors {
+  width: initial;
+  padding: 3vh 1vw;
+  height: 449px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #f3f6ff;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 20px rgba(121, 173, 211, 0.08);
+}
+
+.label-info {
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  color: #646464;
+  margin-bottom: 20px;
+}
+
+.investor-card {
+  display: flex;
+  align-items: center;
+  font-family: Gilroy-Bold;
+  font-size: 14px;
+  color: rgba(0, 19, 67, 1);
+  margin: 3vh 0vw;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-right: 2vw;
+}
+
+.black-box {
+  width: initial;
+  height: 10vh;
+  background: #000000;
+  border: 2px solid #f3f6ff;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  padding: 1vh 1vw;
+  border-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  justify-content: center;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left-width: 1px;
+  border-left-color: white;
+  border-left-style: solid;
+}
+
+.small-text {
+  font-family: Gilroy-Regular;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.small-text1 {
+  display: flex;
+  align-items: center;
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  width: -webkit-fill-available;
+}
+
+.market-chart {
+  width: initial;
+  height: 30vh;
+  background: #ffffff;
+  border: 2px solid #f3f6ff;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+}
+
+.image {
+  height: inherit;
+  width: -webkit-fill-available;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  width: initial;
+  height: inherit;
+  background: #ffffff;
+  border: 2px solid #f3f6ff;
+  box-shadow: 0px 2px 20px rgba(121, 173, 211, 0.08);
+  border-radius: 10px;
+  padding: 2vh 1.5vw;
+  margin-bottom: 3vh;
+}
+
+.company-info-card {
+  display: flex;
+  font-family: Gilroy-Bold;
+  font-size: 12px;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  margin-bottom: 10px;
+}
+
+.framed {
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.value {
+  display: flex;
+  justify-content: flex-end;
+  width: 45px;
+}
+
+.change {
+  display: flex;
+  width: 45px;
+  justify-content: flex-end;
+}
+
+.news-feed {
+  background: #ffffff;
+  border: 2px solid #f3f6ff;
+  color: #646464;
+  box-shadow: 0px 2px 20px rgba(121, 173, 211, 0.08);
+  border-radius: 10px;
+  width: initial;
+  padding: 3vh 1.6vw;
+  display: flex;
+  flex-direction: column;
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  font-family: Gilroy-Medium;
+  font-size: 12px;
+  color: #646464;
+  margin: 3vh 0vh;
+}
+
+.news-label {
+  font-family: Gilroy-SemiBold;
+  font-size: 12px;
+  color: #001343;
+  margin-bottom: 1vh;
+}
+
+.news-content {
+  display: flex;
+  margin-left: 1vw;
+  width: 8vw;
+  justify-content: space-between;
+}

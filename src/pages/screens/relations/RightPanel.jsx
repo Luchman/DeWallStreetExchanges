@@ -1,10 +1,13 @@
 import React from "react";
 
+import  "../../../styles/screens/relations/rightpanel.modules.css"
+
 import companies from "../../../data/companies.json";
 
 import newsdatas from "../../../data/dewsnews.json";
 
 import { bullet, trade, arrow } from "../../../assets/index";
+
 
 function RightPanel() {
   const renderCompanies = (
@@ -28,7 +31,7 @@ function RightPanel() {
   );
 
   const renderDewsNews = (
-    <div className="news-feed">
+    <div className="news-feed"> dewallstreet newsfeed
       {newsdatas.map((data) => (
         <div className="news-card">
           <div className="news-label">

@@ -6,7 +6,7 @@ import mappin from "../assets/map-pin.png";
 import arrow from "../assets/arrow.png";
 import { useState } from "react";
 import { useHistory } from "react-router";
-import "../styles/tab.modules.css";
+import "../styles/screens/home/tab.modules.css";
 
 function Navigation() {
   const history = useHistory();
@@ -38,7 +38,7 @@ function Navigation() {
             history.push("/");
           }}
         >
-          <Coin/>
+          <Coin />
         </div>
         <div>
           <div
@@ -47,7 +47,7 @@ function Navigation() {
               history.push("/Navigation");
             }}
           >
-            <Dewallstreet/>
+            <Dewallstreet />
           </div>
           <div className="exchangestxt">exchanges.</div>
         </div>

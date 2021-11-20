@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/home.modules.css";
-import Depeople from "../assets/Depeople";
-import coin from "../assets/coin.png";
+import "../../../styles/screens/home/home.modules.css";
+import Depeople from "../../../assets/Depeople";
+import coin from "../../../assets/coin.png";
 import { useHistory } from "react-router-dom";
-import Text from "../components/Text";
-import Button from "../components/Button";
-import Img from "../components/Img";
+import Text from "../../../components/Text";
+import Button from "../../../components/Button";
+import Img from "../../../components/Img";
 
 function Home() {
   const history = useHistory();

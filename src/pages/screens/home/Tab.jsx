@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "../styles/tab.modules.css";
-import Datas from "../data/data.json";
-import arrow from "../assets/arrow.png";
-import mappin from "../assets/map-pin.png";
-import Text from "../components/Text";
+import "../../../styles/screens/home/tab.modules.css";
+
+import Datas from "../../../data/data.json";
+import arrow from "../../../assets/arrow.png";
+import mappin from "../../../assets/map-pin.png";
+import Text from "../../../components/Text";
 
 function Tab() {
   const [state, setState] = useState({ clicked: false, name: "option" });
