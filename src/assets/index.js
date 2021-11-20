@@ -12,7 +12,7 @@ import arrow from "../assets/icons/tri.svg";
 import pot1 from "../assets/images/pot1.jpg";
 import pot2 from "../assets/images/pot2.jpg";
 import bullet from "../assets/images/Ellipse 4.png";
-
+import bookmarked from "../assets/icons/bookmarked.svg"
 import btnplus from "../assets/icons/plus.svg"
 import plus from "../assets/icons/message-plus.svg";
 import save from "../assets/icons/wishlist.svg";
@@ -41,6 +41,7 @@ export {
   pot2,
   bullet,
   plus,
+  bookmarked,
   save,
   bluedot,
   home,

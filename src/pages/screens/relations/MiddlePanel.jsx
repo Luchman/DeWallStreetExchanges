@@ -12,6 +12,7 @@ import {
   dots,
   pot1,
   plus,
+  bookmarked,
   save,
   bluedot,
   trash,
@@ -23,7 +24,7 @@ import {
 
 function MiddlePanel() {
   const [isDisplay, setisDisplay] = useState(false);
-
+  const [bookmark, setBookmark] = useState(false);
   const [stuffDisplay, setStuffDisplay] = useState(false);
   const [reaction, setReaction] = useState({ liked: false, disliked: false });
 
@@ -50,7 +51,7 @@ function MiddlePanel() {
           />
         </div>
 
-        {/*POP-UP*/}
+        {/*POP-UP TOOLS*/}
 
         <div className="share-box">
           <div className={stuffDisplay ? "stuff-box" : "stuff-box-none"}>
@@ -111,8 +112,10 @@ function MiddlePanel() {
               <img src={plus} alt="plus" />
               <text className="btn-text">add your response</text>
             </button>
-            <button className="blueButton">
-              <img src={save} alt="save" />
+            <button className="blueButton" onClick={()=>{
+              setBookmark(!bookmark)
+            }}>
+              <img src={bookmark ? bookmarked:save} alt="save" />
             </button>
           </div>
         </div>

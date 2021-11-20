@@ -14,31 +14,30 @@ const Text = (props) => {
     fontFamily,
     letterSpacing,
     cursor,
-    ...style
+    style
   } = props;
 
-  const primaryStyles = {
-    ...style,
-  };
+  // const primaryStyles = {
+  // };
 
-  const secondaryStyles = {
-    fontFamily: fontFamily,
-    fontSize: fontSize,
-    letterSpacing: letterSpacing,
-    textShadow: textShadow,
-    cursor: cursor,
-    ...style,
-    className: className,
-  };
+  // const secondaryStyles = {
+  //   fontFamily: fontFamily,
+  //   fontSize: fontSize,
+  //   letterSpacing: letterSpacing,
+  //   textShadow: textShadow,
+  //   cursor: cursor,
+  //   ...style,
+  //   className: className,
+  // };
 
-  const errorStyles = {
-    fontFamily: fontFamily || "Gilroy-Medium",
-    fontSize: fontSize || "86.9px",
-    lineHeight: lineHeight || "18px",
-    letterSpacing: "-0.04em",
-    color: "red",
-    ...style,
-  };
+  // const errorStyles = {
+  //   fontFamily: fontFamily || "Gilroy-Medium",
+  //   fontSize: fontSize || "86.9px",
+  //   lineHeight: lineHeight || "18px",
+  //   letterSpacing: "-0.04em",
+  //   color: "red",
+  //   ...style,
+  // };
 
   const defaultStyles = {
     fontFamily: "Gilroy-Medium",
@@ -63,22 +62,23 @@ const Text = (props) => {
       case "warning":
         return styles.warning;
       default:
-        return defaultStyles;
+        return styles.defaultStyles;
     }
   };
 
   switch (component) {
     case "text":
       return (
-        <text className={getClassName()} onClick={onClick}>
+        <text className={getClassName()} style={style} onClick={onClick}>
           {children}
+          {console.log(style)}
         </text>
       );
-    case "div":
+    case "span":
       return (
-        <div className={getClassName()} onClick={onClick}>
+        <span className={getClassName()} onClick={onClick}>
           {children}
-        </div>
+        </span>
       );
     default:
       return (

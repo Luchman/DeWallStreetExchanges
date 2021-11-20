@@ -45,10 +45,13 @@ function Home() {
           <Img variant="coin" src={coin} alt="coin" />
           <div className="group">
             <Text
-              variant="default"
-              textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
-              fontSize="32px"
-              style={{ margin: "2vh 0" }}
+              component="text"
+              variant=""
+              style={{
+                textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                fontSize: "32px",
+                margin: "2vh 0",
+              }}
             >
               stake <b>dé</b>
             </Text>
