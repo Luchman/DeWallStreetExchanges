@@ -10,8 +10,8 @@ const Div = (props) => {
 
  const dropDown={
      fontFamily:"Gilroy-Medium",
-     fontSize:"16px",
-     color:"white",
+     fontSize:"18px",
+     color:"pink",
      cursor:"pointer"
  }
 

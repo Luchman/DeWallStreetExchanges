@@ -1,16 +1,11 @@
-import React from "react";
-import NavData from "../data/navdata.json";
-import Coin from "../assets/Imagejs/Coin";
-import Dewallstreet from "../assets/Imagejs/Dewallstreet";
-import mappin from "../assets/map-pin.png";
+import React, { useState } from "react";
+import "../styles/tab.modules.css";
+import Datas from "../data/data.json";
 import arrow from "../assets/arrow.png";
-import { useState } from "react";
-import { useHistory } from "react-router";
-import style from "../styles/tab.modules.css";
+import mappin from "../assets/map-pin.png";
+import Text from "../components/Text";
 
-function Navigation() {
-  const history = useHistory();
-
+function Tab() {
   const [state, setState] = useState({ clicked: false, name: "option" });
   function clickHandler() {
     setState({
@@ -19,38 +14,12 @@ function Navigation() {
     });
   }
 
-  const renderData = NavData.map((Data) => (
-    <text className="link"
-      onClick={() => {
-        history.push(Data.to);
-      }}
-    >
-      {Data.title}
-    </text>
+  const renderData = Datas.map((data) => (
+    <text className="link">{data.name}</text>
   ));
 
   return (
-    <div className="Menu_bg">
-      <div className="Logonav">
-        <div
-          onClick={() => {
-            history.push("/");
-          }}
-        >
-          <Coin />
-        </div>
-        <div>
-          <div
-            className="dewallstreettxt"
-            onClick={() => {
-              history.push("/Navigation");
-            }}
-          >
-            <Dewallstreet />
-          </div>
-          <div className="exchangestxt">exchanges.</div>
-        </div>
-      </div>
+    <div className="tab">
       <div className="holder">
         <div className="dropdown" onClick={clickHandler}>
           <img src={mappin} height="20px" width="20px" alt="map-pin" />
@@ -79,4 +48,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default Tab;

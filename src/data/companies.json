@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Barone LLC",
+        "value": "58,452",
+        "change": "+0.158%"
+    },
+    {
+        "name": "Abstergo Ltd.",
+        "value": "28,498",
+        "change": "+0.358%"
+    },
+    {
+        "name": "Acme Co.",
+        "value": " 78,412",
+        "change": "-0.058%"
+    },
+    {
+        "name": "Binford Ltd.",
+        "value": "15,228",
+        "change": "0.158%"
+    }
+]

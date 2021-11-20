@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/components/Text.module.css";
+import styles from "../styles/components/text.module.css";
 
 const Text = (props) => {
   const {
@@ -9,32 +9,26 @@ const Text = (props) => {
     variant,
     fontSize,
     lineHeight,
-    style,
     onClick,
     textShadow,
     fontFamily,
     letterSpacing,
     cursor,
+    ...style
   } = props;
 
   const primaryStyles = {
-    fontFamily: "Staatliches",
-    fontSize: fontSize || "59.7px",
-    textShadow: textShadow || "0px 5.52942px 5.52942px rgba(0, 0, 0, 0.25)",
-    letterSpacing: letterSpacing || "0.4px",
-    color: "#ffffff",
     ...style,
   };
 
   const secondaryStyles = {
-    fontFamily: fontFamily || "Gilroy-Bold",
-    fontSize: fontSize || "86.9px",
-    letterSpacing: letterSpacing || "-0.04em",
-    color: "#ffffff",
-    textShadow: textShadow || "0px 7.50275px 7.50275px rgba(0, 0, 0, 0.25)",
+    fontFamily: fontFamily,
+    fontSize: fontSize,
+    letterSpacing: letterSpacing,
+    textShadow: textShadow,
     cursor: cursor,
-    className: className,
     ...style,
+    className: className,
   };
 
   const errorStyles = {
@@ -61,7 +55,7 @@ const Text = (props) => {
       case "primary":
         return styles.primaryStyles;
       case "secondary":
-        return styles.primaryStyles;
+        return styles.secondaryStyles;
       case "error":
         return styles.error;
       case "success":

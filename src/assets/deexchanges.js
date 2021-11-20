@@ -1,6 +1,6 @@
 import React from "react";
 
-function Dewallstreet() {
+function deexchanges() {
   return (
     <svg
       width="107"
@@ -507,4 +507,4 @@ function Dewallstreet() {
   );
 }
 
-export default Dewallstreet;
+export default deexchanges;

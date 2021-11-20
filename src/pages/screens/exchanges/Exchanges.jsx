@@ -1,9 +1,9 @@
 import React from 'react'
-import Settings from '../../assets/Imagejs/Settings';
-import Inbox from '../../assets/Imagejs/Inbox';
-import Anchor from '../../assets/Imagejs/Anchor';
-import Togellipse from '../../assets/Imagejs/Togellipse';
-import Togrect from '../../assets/Imagejs/Togrect';
+import Settings from '../../../assets/Imagejs/Settings.js';
+import Inbox from '../../../assets/Imagejs/Inbox.js';
+import Anchor from '../../../assets/Imagejs/Anchor.js';
+import Togellipse from '../../../assets/Imagejs/Togellipse.js';
+import Togrect from '../../../assets/Imagejs/Togrect.js';
 import { useHistory } from "react-router-dom";
 
 

@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "../assets/coin.png";
-import logo1 from "../assets/logo1.png";
+import logo1 from "../assets/dewall.svg";
 import arrow from "../assets/Vector.png";
 import Text from "../components/Text";
-import Img from "../components/Img"
+import Img from "../components/Img";
 
 import "../styles/footer.modules.css";
 
