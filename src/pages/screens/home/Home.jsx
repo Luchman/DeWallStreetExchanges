@@ -1,7 +1,12 @@
 import React from "react";
 import "../../../styles/screens/home/home.modules.css";
-import Depeople from "../../../assets/Depeople";
-import coin from "../../../assets/coin.png";
+
+// import Depeople from "../../../assets/Imagejs/Depeople";
+// import coin from "../../../assets/coin.png";
+
+import {Depeople} from "../../../assets/Imagejs"
+import {coin} from "../../../assets/images"
+
 import { useHistory } from "react-router-dom";
 import Text from "../../../components/Text";
 import Button from "../../../components/Button";
@@ -55,7 +60,7 @@ function Home() {
             >
               stake <b>dé</b>
             </Text>
-            <Text variant="default" lineHeight="19px">
+            <Text  variant="poor" style={{lineHeight:"19px",color:"white"}}>
               and earn promising returns from our products, services and
               ventures as dividends .
             </Text>

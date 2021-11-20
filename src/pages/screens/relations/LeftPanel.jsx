@@ -2,20 +2,18 @@ import React, { useState } from "react";
 
 import  "../../../styles/screens/relations/leftpanel.modules.css"
 
+import Text from "../../../components/Text";
 
 import Button from "../../../components/Button";
 
-import {
-  img,
-  img2,
-  img3,
-  img4,
-  pot1,
+import topinvestors from "../../../data/topinvestors.json"
+
+import {img,img2,img3,img4, pot1,
   pot2,
   home,
   saved,
   your,
-} from "../../../assets/index";
+} from "../../../assets/icons/index";
 
 function LeftPanel() {
   const [clicked, setClicked] = useState({
@@ -23,6 +21,18 @@ function LeftPanel() {
     yourthread: false,
     savedthread: false,
   });
+
+
+  const renderInvestors=topinvestors.map(investor=>(<div className="investor-card">
+  <img
+    src={investor.investor.includes("ne")?pot1:pot2}
+    height="32px"
+    width="32px"
+    style={{ borderRadius: "50px" }}
+    alt="profile"
+  />
+  <Text component="text" variant="semi-head" >&nbsp;&nbsp;<b>{investor.investor}</b></Text>
+</div>))
 
   return (
     <div className="left-panel">
@@ -107,57 +117,7 @@ function LeftPanel() {
       </div>
       <div className="top-investors">
         <label className="label-info">Top Investors</label>
-        <div className="investor-card">
-          <img
-            src={pot1}
-            height="32px"
-            width="32px"
-            style={{ borderRadius: "50px" }}
-            alt="profile"
-          />
-          <label>&nbsp;&nbsp;Darrell Steward</label>
-        </div>
-        <div className="investor-card">
-          <img
-            src={pot2}
-            height="32px"
-            width="32px"
-            style={{ borderRadius: "50px" }}
-            alt="profile"
-          />
-          <label>&nbsp;&nbsp;Devon Lane</label>
-        </div>
-        <div className="investor-card">
-          <img
-            src={pot1}
-            height="32px"
-            width="32px"
-            style={{ borderRadius: "50px" }}
-            alt="profile"
-          />
-          <label>&nbsp;&nbsp;Marvin McKinney</label>
-        </div>
-        <div className="investor-card">
-          <img
-            src={pot2}
-            height="32px"
-            width="32px"
-            style={{ borderRadius: "50px" }}
-            alt="profile"
-          />
-          <label>&nbsp;&nbsp;Arlene McCoy</label>
-        </div>
-
-        <div className="investor-card">
-          <img
-            src={pot2}
-            height="32px"
-            width="32px"
-            style={{ borderRadius: "50px" }}
-            alt="profile"
-          />
-          <label>&nbsp;&nbsp;Cody Fisher</label>
-        </div>
+        {renderInvestors}
       </div>
     </div>
   );

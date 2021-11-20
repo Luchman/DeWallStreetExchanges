@@ -4,34 +4,7 @@
   color: #001343;
 }
 
-.top-investors {
-  width: initial;
-  padding: 3vh 1vw;
-  height: 449px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 2px solid #f3f6ff;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 20px rgba(121, 173, 211, 0.08);
-}
 
-.label-info {
-  font-family: Gilroy-Bold;
-  font-size: 16px;
-  color: #646464;
-  margin-bottom: 20px;
-}
-
-.investor-card {
-  display: flex;
-  align-items: center;
-  font-family: Gilroy-Bold;
-  font-size: 14px;
-  color: rgba(0, 19, 67, 1);
-  margin: 3vh 0vw;
-}
 
 .right-panel {
   display: flex;

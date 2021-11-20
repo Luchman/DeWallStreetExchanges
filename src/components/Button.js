@@ -3,15 +3,11 @@ import React from "react";
 const Button = (props) => {
   const {
     children,
-    variant,
     fontSize,
     style,
     onClick,
-    height,
-    width,
     color,
-    fontFamily
-   
+    fontFamily   
   } = props;
 
 

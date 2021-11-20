@@ -156,13 +156,14 @@
     display: flex;
     flex-direction: column;
   }
-  .content {
+  
+  /* .content {
     font-family: Gilroy-Medium;
     font-size: 14px;
-    color: #646464;
+    color: #7e7e7e;
     line-height: 22px;
     margin-bottom: 5vh;
-  }
+  } */
   
   .topic {
     font-family: Gilroy-Bold;

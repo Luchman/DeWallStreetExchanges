@@ -3,17 +3,10 @@ import styles from "../styles/components/text.module.css";
 
 const Text = (props) => {
   const {
-    className,
     component,
     children,
     variant,
-    fontSize,
-    lineHeight,
     onClick,
-    textShadow,
-    fontFamily,
-    letterSpacing,
-    cursor,
     style
   } = props;
 
@@ -39,15 +32,15 @@ const Text = (props) => {
   //   ...style,
   // };
 
-  const defaultStyles = {
-    fontFamily: "Gilroy-Medium",
-    fontSize: fontSize || "14px",
-    lineHeight: lineHeight || "18px",
-    letterSpacing: "0.03em",
-    color: "#ffffff",
-    textShadow: textShadow || "0px 4px 4px rgba(0, 0, 0, 0.25)",
-    ...style,
-  };
+  // const defaultStyles = {
+  //   fontFamily: "Gilroy-Medium",
+  //   fontSize: fontSize || "14px",
+  //   lineHeight: lineHeight || "18px",
+  //   letterSpacing: "0.03em",
+  //   color: "#ffffff",
+  //   textShadow: textShadow || "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  //   ...style,
+  // };
 
   const getClassName = () => {
     switch (variant) {
@@ -57,10 +50,16 @@ const Text = (props) => {
         return styles.secondaryStyles;
       case "error":
         return styles.error;
-      case "success":
-        return styles.success;
+      case "poor":
+        return styles.poorStyles;
       case "warning":
         return styles.warning;
+      case "content":
+        return styles.contentStyles;
+      case "heading":
+        return styles.headingStyles;  
+       case "semi-head":
+        return styles.semiStyle 
       default:
         return styles.defaultStyles;
     }
@@ -71,18 +70,17 @@ const Text = (props) => {
       return (
         <text className={getClassName()} style={style} onClick={onClick}>
           {children}
-          {console.log(style)}
         </text>
       );
     case "span":
       return (
-        <span className={getClassName()} onClick={onClick}>
+        <span className={getClassName()} style={style} onClick={onClick}>
           {children}
         </span>
       );
     default:
       return (
-        <p className={getClassName()} onClick={onClick}>
+        <p className={getClassName()} style={style} onClick={onClick}>
           {children}
         </p>
       );

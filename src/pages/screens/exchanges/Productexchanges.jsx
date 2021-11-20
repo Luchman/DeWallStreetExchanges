@@ -1,6 +1,9 @@
 import React from "react";
-import Dropdown from "../../../assets/Imagejs/Dropdown.js";
-import Search from "../../../assets/Imagejs/Search.js";
+
+// import Dropdown from "../../../assets/Imagejs/Dropdown.js";
+// import Search from "../../../assets/Imagejs/Search.js";
+
+import { Dropdown, Search } from "../../../assets/Imagejs";
 
 function Productexchanges() {
   return (
@@ -19,11 +22,11 @@ function Productexchanges() {
         </div>
         <div className="industries">
           <span style={{ width: "180px" }}> Industries </span>
-          <Dropdown/>
+          <Dropdown />
         </div>
         <div className="Markets">
           <span style={{ width: "180px" }}> Markets </span>
-          <Dropdown/>
+          <Dropdown />
         </div>
       </div>
       <div>
@@ -41,7 +44,7 @@ function Productexchanges() {
         </span>
         <div className="Today">
           <span>Today</span>
-          <Dropdown/>
+          <Dropdown />
         </div>
       </div>
     </div>

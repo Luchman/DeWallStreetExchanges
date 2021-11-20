@@ -1,6 +1,6 @@
 import React from "react";
 
-function deexchanges() {
+function Deexchanges() {
   return (
     <svg
       width="107"
@@ -507,4 +507,4 @@ function deexchanges() {
   );
 }
 
-export default deexchanges;
+export default Deexchanges;

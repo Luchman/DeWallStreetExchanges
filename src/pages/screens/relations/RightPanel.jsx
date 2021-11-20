@@ -1,20 +1,21 @@
 import React from "react";
 
-import  "../../../styles/screens/relations/rightpanel.modules.css"
+import "../../../styles/screens/relations/rightpanel.modules.css";
 
 import companies from "../../../data/companies.json";
 
 import newsdatas from "../../../data/dewsnews.json";
 
-import { bullet, trade, arrow } from "../../../assets/index";
+import { bullet, trade, arrow } from "../../../assets/icons/index";
 
+import Text from "../../../components/Text";
 
 function RightPanel() {
   const renderCompanies = (
     <div className="company-info">
       {companies.map((data) => (
         <div className="company-info-card">
-          <label>{data.name} </label>
+          <Text component="text" variant="heading" style={{fontSize:"14px"}}>{data.name} </Text>
 
           <div className="framed">
             <div className="value">
@@ -22,7 +23,17 @@ function RightPanel() {
             </div>
 
             <div className="change">
-              <label style={{color:(data.change.includes("+") ? "#00C696":data.change.includes("-")? "#FE2F2F":"#FE9F2F")}}>{data.change}</label>
+              <label
+                style={{
+                  color: data.change.includes("+")
+                    ? "#00C696"
+                    : data.change.includes("-")
+                    ? "#FE2F2F"
+                    : "#FE9F2F",
+                }}
+              >
+                {data.change}
+              </label>
             </div>
           </div>
         </div>
@@ -31,7 +42,8 @@ function RightPanel() {
   );
 
   const renderDewsNews = (
-    <div className="news-feed"> dewallstreet newsfeed
+    <div className="news-feed">
+      dewallstreet newsfeed
       {newsdatas.map((data) => (
         <div className="news-card">
           <div className="news-label">
@@ -46,8 +58,8 @@ function RightPanel() {
           </div>
 
           <div className="news-content">
-            <text>{data.time}</text>
-            <text>{data.views}</text>
+            <Text component="text" variant="content" style={{fontSize:"12px"}}>{data.time}</Text>
+            <Text component="text" variant="content" style={{fontSize:"12px"}}>{data.views}</Text>
           </div>
         </div>
       ))}

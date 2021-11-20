@@ -3,14 +3,7 @@ import { Route, Switch } from "react-router";
 import Navigation from "./pages/Navigation.jsx";
 
 import "../src/App.css";
-import {
-  Dashboards,
-  Exchanges,
-  Portfolios,
-  Relations,
-  Resources,
-  Accounts,
-} from "./pages";
+import { Dashboards, Exchanges, Portfolios, Relations, Resources, Accounts } from "./pages";
 
 import Productexchanges from "../src/pages/screens/exchanges/Productexchanges";
 

@@ -4,6 +4,8 @@ import  "../../../styles/screens/relations/centralpanel.modules.css"
 
 import datas from "../../../data/threads.json";
 
+import Text from "../../../components/Text";
+
 import {
   ActiveUpArrow,
   ActiveDownArrow,
@@ -11,6 +13,7 @@ import {
   NormalUpArrow,
   dots,
   pot1,
+  pot2,
   plus,
   bookmarked,
   save,
@@ -20,7 +23,7 @@ import {
   edit,
   x,
   btnplus,
-} from "../../../assets/index";
+} from "../../../assets/icons/index";
 
 function MiddlePanel() {
   const [isDisplay, setisDisplay] = useState(false);
@@ -85,16 +88,16 @@ function MiddlePanel() {
       {/*INFO-CONTAINER*/}
 
       <div className="content-section">
-        <label className="topic">{data.topic}</label>
-        <label className="content">{data.content}</label>
+        <Text component="text" variant="heading" style={{margin:"2vh 0vw"}}>{data.topic}</Text>
+        <Text  variant="content" style={{lineHeight:"20px"}} >{data.content}</Text>
 
         <div className={isDisplay? "info-comment" : "info"}>
           {/*AUTHOR-SECTION*/}
 
           <div className="seperator">
-            <text className="info-text">posted by</text>
+            <Text component="text" variant="content" style={{fontSize:"12px", color:"#646464"}}>posted by &nbsp;</Text>
             <img
-              src={pot1}
+              src={data.author.includes("per") ? pot1:pot2}
               height="30px"
               width="30px"
               style={{ borderRadius: "50px" }}
@@ -103,7 +106,8 @@ function MiddlePanel() {
             &nbsp;
             <text className="info-text2">{data.author}</text>
             <img src={bluedot} style={{ marginRight: "5px" }} alt="blue-dot" />
-            <text className="info-text">12 hr ago</text>
+
+            <Text component="text" variant="content" style={{fontSize:"12px", color:"#646464"}}>12 hr ago</Text>
           </div>
           <div className="seperator-1">
             <button
@@ -111,8 +115,10 @@ function MiddlePanel() {
               style={{ visibility: isDisplay ? "hidden" : "visible" }}
               onClick={() => setisDisplay(!isDisplay)}
             >
-              <img src={plus} alt="plus" />
-              <text className="btn-text">add your response</text>
+              <div style={{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
+              <img src={plus} height="20px" width="20px" alt="plus" />&nbsp;
+              <Text component="text" variant="content" style={{color:"#001343"}}>add your response</Text>
+              </div>
             </button>
             <button
               className="blueButton"

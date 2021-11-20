@@ -1,12 +1,16 @@
 import React from "react";
 import NavData from "../data/navdata.json";
-import Coin from "../assets/Imagejs/Coin.js";
-import Dewallstreet from "../assets/Imagejs/Dewallstreet.js";
-import mappin from "../assets/map-pin.png";
-import arrow from "../assets/arrow.png";
+// import Coin from "../assets/Imagejs/Coin.js";
+// import Dewallstreet from "../assets/Imagejs/Dewallstreet.js";
+// import mappin from "../assets/map-pin.png";
+// import arrow from "../assets/arrow.png";
 import { useState } from "react";
 import { useHistory } from "react-router";
+
 import "../styles/screens/home/tab.modules.css";
+
+import { Coin, Dewallstreet } from "../assets/Imagejs";
+import { arrow, mappin } from "../assets/images";
 
 function Navigation() {
   const history = useHistory();

@@ -73,4 +73,30 @@
     );
     color: white;
   }
+
+
+  .top-investors {
+    width: initial;
+    padding: 3vh 1vw;
+    height: 449px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid #f3f6ff;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 20px rgba(121, 173, 211, 0.08);
+  }
+  
+  .label-info {
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    color: #646464;
+  }
+  
+  .investor-card {
+    display: flex;
+    align-items: center;
+    margin: 3vh 0vw;
+  }
   
