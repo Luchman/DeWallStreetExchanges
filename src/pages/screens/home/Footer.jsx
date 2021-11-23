@@ -21,7 +21,7 @@ function Footer() {
       <Img variant="coin" src={coin} alt="logo" />
       <Img variant="dewallstreet" src={dewall} alt="logo2" />
       <div className="para">
-        <Text  varient="poor">
+        <Text  varient="basic">
           The first universal securities and deriviatives exchanges for
           decentralized crypto communities for cross border transactions and
           distributed intercontinental wealth portfolios.

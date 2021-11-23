@@ -50,8 +50,8 @@ const Text = (props) => {
         return styles.secondaryStyles;
       case "error":
         return styles.error;
-      case "poor":
-        return styles.poorStyles;
+      case "basic":
+        return styles.basicStyles;
       case "warning":
         return styles.warning;
       case "content":

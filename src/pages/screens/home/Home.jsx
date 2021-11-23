@@ -60,7 +60,7 @@ function Home() {
             >
               stake <b>dé</b>
             </Text>
-            <Text  variant="poor" style={{lineHeight:"19px",color:"white"}}>
+            <Text  variant="basic" style={{lineHeight:"19px",color:"white"}}>
               and earn promising returns from our products, services and
               ventures as dividends .
             </Text>
